@@ -48,3 +48,7 @@ body {
 .card-back {
   background: red;
 }
+
+.hide{
+  display: none;
+}
