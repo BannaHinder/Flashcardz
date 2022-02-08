@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flash card app</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <h1>Lägg till flashcards:</h1>
+
+      <form id="form" class="form">
+        <label for="inputfield-front">Innehåll framsida:</label>
+        <input type="text" id="inputfield-front" />
+
+        <label for="inputfield-back">Innehåll back:</label>
+        <input type="text" id="inputfield-back" />
+
+        <button id="button-save">Spara</button>
+      </form>
+
+      <section class="container-cards"  id="container-cards">
+        <h2>Lista på flashcards:</h2>
+        <!-- här kommer articles -->
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
