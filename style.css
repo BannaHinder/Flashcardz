@@ -7,6 +7,12 @@ body {
   margin: 0;
   padding: 0;
 }
+h1 {
+  margin-top: 20px;
+}
+h2 {
+  text-align: center;
+}
 .wrapper {
   display: flex;
   justify-content: center;
@@ -14,9 +20,16 @@ body {
   flex-direction: column;
   padding: 20px;
   background: lightpink;
-  height: 100vh;
+  height: 100%;
 }
 .form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.form div {
+  flex: 1;
+  padding: 10px;
 }
 .container {
   width: 100%;
@@ -25,7 +38,7 @@ body {
   flex-direction: column;
   padding: 20px;
   background: #ffdadf;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .container-cards {
   height: auto;
@@ -35,20 +48,39 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
   word-wrap: break-word;
+  min-height: 150px;
   height: auto;
   padding: 10px;
   width: 200px;
-  border: solid 1px black;
 }
 .card-front {
-  background: rgb(255, 88, 88);
+  background: rgb(255, 255, 255);
 }
 
 .card-back {
-  background: red;
+  background: rgba(238, 42, 42, 0.678);
 }
 
-.hide{
+.hide {
   display: none;
+}
+button {
+  font-weight: 500;
+  color: white;
+  background: rgb(0, 0, 0);
+  align-self: center;
+  max-width: 50%;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+#button-save {
+  background: rgba(238, 72, 72, 0.74);
 }

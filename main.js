@@ -1,5 +1,5 @@
 let cards = [];
-
+console.log(cards)
 const form = document.getElementById("form");
 const inputFieldFront = document.getElementById("inputfield-front");
 const inputFieldBack = document.getElementById("inputfield-back");
@@ -18,14 +18,6 @@ function loadSavedData() {
     });
   }
 }
-
-// //ID TILL OBJEKTEN
-// function giveId(){
-//  cards.forEach((card, i) =>{
-//      card.id="card" + i;
-//  })
-//  console.log(cards)
-// }
 
 containerCards.addEventListener("click", (e) => {
   if (e.target.classList.contains("button-flip")) {
@@ -75,11 +67,13 @@ function saveToLocalStorage(arr) {
 }
 
 function drawCard(front, back) {
-  const article = `<article class="card" >
+  const article = `<article class="card card-front" >
     <p id="text-front">${front}</p>
     <p id="text-back" class="hide">${back}</p>
+    
     <button class="button-flip">Vänd kort</button>
     <button class="button-delete">Ta bort</button>
+  
     </article>`;
   containerCards.innerHTML += article;
 }
